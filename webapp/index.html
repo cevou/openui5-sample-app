@@ -5,17 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>OpenUI5 Todo App</title>
 
-	<script id="sap-ui-bootstrap"
-		src="resources/sap-ui-core.js"
-		data-sap-ui-libs="sap.m"
-		data-sap-ui-xx-waitForTheme="true"
-		data-sap-ui-theme="sap_belize_plus"
-		data-sap-ui-resourceRoots='{
-			"sap.ui.demo.todo": "./"
-		}'
-		data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
-		data-sap-ui-compatVersion="edge"
-		data-sap-ui-async="true">
+	<script type="text/javascript">
+		window["sap-ui-config"] = {
+			"sap-ui-libs": "sap.m",
+			"xx-waitForTheme": true,
+			theme: "sap_belize_plus",
+			resourceRoots: {
+				"": ".", // needed for ui5loader-autoconfig to determine base URL
+			},
+			onInit: "module:sap/ui/core/ComponentSupport",
+			compatVersion: "edge",
+			async: "true",
+			preload: false,
+		};
 	</script>
 </head>
 
