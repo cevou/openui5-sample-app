@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>OpenUI5 Todo App</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8">
 	<script type="text/javascript">
 		window["sap-ui-config"] = {
-			theme: "sap_belize",
-			bindingSyntax: "complex",
+			"xx-waitForTheme": true,
+			theme: "sap_belize_plus",
+			resourceRoots: {
+				"": ".",
+			},
 			compatVersion: "edge",
+			async: "true",
 		};
 	</script>
-<link href="style.8240cc290ad6a643fb8bc95da753eda3.css" rel="stylesheet"><link href="style.1d1aa4ebf57d41ac7d42012243e4e7c2.css" rel="stylesheet"></head>
-<body class="sapUiBody" id="root" role="application"><script type="text/javascript" src="app.a738456eaa57611afa20.js"></script><script type="text/javascript" src="vendor.066b25c63179f5b25f93.js"></script></body>
+</head>
+
+<body class="sapUiBody">
+	<div id="root"></div>
+<script type="text/javascript" src="main.js"></script></body>
 </html>
